@@ -1,0 +1,19 @@
+<section class="home_main_container">
+
+<div class="home_button_list" ui-sref="list">
+    <p> + </p>
+    <!--<button type="button" class="home_new_list">New Bucket List</button>-->
+</div>
+
+
+
+
+<div class="home_api_container">
+
+    <div class="home_time">{{date | date: 'h:mm'}}</div>
+
+    <div class="home_quote" ng-repeat="quote in quotes">{{quote.quote}}</div>
+
+</div>
+
+</section>

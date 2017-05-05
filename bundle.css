@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.home_main_container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/items.jpg");
+  background-repeat: none;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover; }
+  .home_main_container .home_button_list {
+    color: black;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3.8%;
+    left: 4%;
+    cursor: pointer; }
+    .home_main_container .home_button_list :hover {
+      background: #FEC267;
+      -webkit-transition: background 0.5s;
+      border-radius: 50%; }
+    .home_main_container .home_button_list p {
+      font-size: 70px;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+  .home_main_container .home_api_container {
+    width: 100vw;
+    height: 50%;
+    background-color: rgba(123, 123, 123, 0.59);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .home_main_container .home_api_container .home_time {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 80px;
+      color: white;
+      font-family: 'Marvel', sans-serif; }
+      @media (min-width: 550px) {
+        .home_main_container .home_api_container .home_time {
+          top: 25%; } }
+    .home_main_container .home_api_container .home_quote {
+      position: absolute;
+      top: 60%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      color: white;
+      font-family: 'Marvel', sans-serif; }
+      @media (min-width: 300px) {
+        .home_main_container .home_api_container .home_quote {
+          width: 95%;
+          font-size: 30px; } }
+      @media (min-width: 350px) {
+        .home_main_container .home_api_container .home_quote {
+          font-size: 40px; } }
+      @media (min-width: 650px) {
+        .home_main_container .home_api_container .home_quote {
+          font-size: 50px; } }
+      @media (min-width: 910px) {
+        .home_main_container .home_api_container .home_quote {
+          width: 80%;
+          font-size: 50px; } }
+
+.insp-main-container {
+  position: relative;
+  background-color: #FEC267; }
+  .insp-main-container .insp_top_nav {
+    height: 90px;
+    width: 35%;
+    display: none; }
+    .insp-main-container .insp_top_nav li {
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      line-height: 80px;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: 'Marvel', sans-serif;
+      cursor: pointer; }
+      @media (min-width: 1050px) {
+        .insp-main-container .insp_top_nav li {
+          font-size: 25px; } }
+    @media (min-width: 1050px) {
+      .insp-main-container .insp_top_nav {
+        display: block;
+        width: 35%; } }
+    @media (min-width: 950px) {
+      .insp-main-container .insp_top_nav {
+        width: 45%; } }
+    .insp-main-container .insp_top_nav .insp_title {
+      font-size: 45px;
+      cursor: default; }
+    .insp-main-container .insp_top_nav .insp_ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      color: white; }
+  .insp-main-container .insp_mobile_top_nav {
+    width: 100%;
+    height: 90px;
+    position: relative; }
+    @media (min-width: 1050px) {
+      .insp-main-container .insp_mobile_top_nav {
+        display: none; } }
+    .insp-main-container .insp_mobile_top_nav .insp_hamburger {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: 2; }
+    .insp-main-container .insp_mobile_top_nav #insp_bars {
+      font-size: 55px;
+      color: white;
+      position: absolute;
+      top: 4%;
+      left: 10%; }
+    .insp-main-container .insp_mobile_top_nav #insp_drop_down {
+      height: 220px;
+      width: 140px;
+      background-color: #FEC267;
+      position: absolute;
+      z-index: 1; }
+      .insp-main-container .insp_mobile_top_nav #insp_drop_down a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Marvel', sans-serif;
+        font-size: 30px;
+        line-height: 35px;
+        border-bottom: 1px solid white; }
+      .insp-main-container .insp_mobile_top_nav #insp_drop_down .insp_home {
+        position: absolute;
+        top: 100px;
+        left: 5px; }
+      .insp-main-container .insp_mobile_top_nav #insp_drop_down .insp_list {
+        position: absolute;
+        top: 140px;
+        left: 5px; }
+  .insp-main-container .pic_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: scroll;
+    background-color: white; }
+    .insp-main-container .pic_container .pic {
+      margin: 5px 5px; }
+      @media (min-width: 1135px) {
+        .insp-main-container .pic_container .pic {
+          display: none; } }
+    .insp-main-container .pic_container .pic-big {
+      margin: 10px 10px;
+      display: none; }
+      @media (min-width: 1135px) {
+        .insp-main-container .pic_container .pic-big {
+          display: block; } }
+
+.list_main_container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/cactus.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover; }
+  .list_main_container .list_top_nav {
+    height: 80px;
+    width: 35%;
+    display: none; }
+    .list_main_container .list_top_nav li {
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      line-height: 80px;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: 'Marvel', sans-serif;
+      cursor: pointer; }
+      @media (min-width: 1050px) {
+        .list_main_container .list_top_nav li {
+          font-size: 25px; } }
+    @media (min-width: 1050px) {
+      .list_main_container .list_top_nav {
+        display: block;
+        width: 35%; } }
+    @media (min-width: 950px) {
+      .list_main_container .list_top_nav {
+        width: 45%; } }
+    .list_main_container .list_top_nav .title {
+      font-size: 45px;
+      cursor: default; }
+  .list_main_container .list_mobile_top_nav {
+    width: 100%;
+    height: 80px;
+    position: relative; }
+    @media (min-width: 1050px) {
+      .list_main_container .list_mobile_top_nav {
+        display: none; } }
+    .list_main_container .list_mobile_top_nav .hamburger {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: 2; }
+    .list_main_container .list_mobile_top_nav #bars {
+      font-size: 55px;
+      color: white;
+      position: absolute;
+      top: 4%;
+      left: 10%; }
+    .list_main_container .list_mobile_top_nav #drop_down {
+      height: 220px;
+      width: 140px;
+      background-color: #FEC267;
+      position: absolute;
+      z-index: 1; }
+      .list_main_container .list_mobile_top_nav #drop_down a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Marvel', sans-serif;
+        font-size: 30px;
+        line-height: 35px;
+        border-bottom: 1px solid white; }
+      .list_main_container .list_mobile_top_nav #drop_down .home {
+        position: absolute;
+        top: 100px;
+        left: 5px; }
+      .list_main_container .list_mobile_top_nav #drop_down .inspiration {
+        position: absolute;
+        top: 140px;
+        left: 5px; }
+  .list_main_container .list_input {
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    height: 30px;
+    width: 175px;
+    font-family: 'Marvel', sans-serif; }
+  .list_main_container .list_bttn {
+    height: 30px;
+    width: 45px;
+    border-radius: 20%;
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    position: absolute;
+    top: 32px;
+    right: 25px;
+    cursor: pointer;
+    font-family: 'Marvel', sans-serif; }
+    .list_main_container .list_bttn :hover {
+      background: lightgray;
+      -webkit-transition: background 0.5s;
+      border-radius: 20%;
+      font-family: 'Marvel', sans-serif; }
+  .list_main_container .list_container {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    background-color: rgba(43, 38, 36, 0.8);
+    position: absolute;
+    top: 80px;
+    line-height: 35px; }
+    .list_main_container .list_container #list_items_decor {
+      color: white;
+      font-size: 25px;
+      font-family: 'Marvel', sans-serif;
+      text-align: center; }
+    .list_main_container .list_container .list_items {
+      text-decoration: line-through; }
+  .list_main_container .list_ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white; }

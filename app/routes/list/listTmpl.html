@@ -1,0 +1,55 @@
+
+<div class="list_main_container">
+    
+
+    <!--/////////////////////////////DESKTOP NAVIGATION////////////////////////////-->
+    <div class="list_top_nav">
+        <ul class="list_ul">
+            <li class="title"> My Bucket List </li>
+            <li ui-sref="home">Home</li>
+            <li> | </li>
+            <li ui-sref="inspiration">Inspiration</li>
+            
+        </ul>
+    </div>
+
+<!--////////////////////////////////MOBILE NAVIGATION//////////////////////////////////////////////-->
+
+    <div class="list_mobile_top_nav">
+        <div class="hamburger" ng-click = 'menu()'><i class="fa fa-chevron-circle-down" aria-hidden="true" id="bars"></i></div>
+        <div id="drop_down" ng-show = 'show'>
+            <a class ="home" ui-sref="home">Home</a>
+            <a class = "inspiration" ui-sref="inspiration">Inspiration</a>
+        </div>
+    
+    </div>
+
+
+ 
+
+
+
+<br/>
+
+
+
+<form ng-submit="addToList(listItem)">
+
+<input type="text" ng-model="listItem" placeholder="Add to your bucket list" class="list_input"/>
+
+</form>
+
+
+
+<div class = "list_bttn">
+    <p ng-click="addToList(listItem)">Add</p>
+</div>
+
+
+<div class="list_container">
+<ul>
+    <li ng-repeat="item in items" list-dir id="list_items_decor">{{item}}</li>
+</ul>
+</div>
+
+</div>
